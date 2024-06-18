@@ -6,11 +6,12 @@
     background-color: rgb(138, 4, 255);
     padding: 5px;
     color: white;
-    margin-top: 10px;
+    margin: 10px 3px;
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid;
+    border: none;
+
     &:hover{
         background-color: white;
         color: rgb(138, 4, 255);
@@ -26,9 +27,25 @@
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
+    margin-left: 5px;
     &:hover{
         background-color: white;
         color: red;
+        border: 1px solid;
+    }
+}
+
+.edit{
+    background-color: rgb(255, 187, 0);
+    color: white;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    &:hover{
+        background-color: white;
+        color: rgb(255, 187, 0);
         border: 1px solid;
     }
 }
