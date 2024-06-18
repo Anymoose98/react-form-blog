@@ -33,15 +33,17 @@ const Main = () => {
                             placeholder="Inserisci il titolo del post"
                             ref={titleRef}
                         />
-                        <button onClick={titleSubmit}>Invia</button>
+                        <button className={mainStyles.button}  onClick={titleSubmit}>Invia</button>
                     </div>
 
                     <div className="col-12">
                         <h3 className={mainStyles.viola}>Titoli salvati</h3>
                         {titles.map((title, index) => (
-                            <div key={index}>
-                                <h3>{title}</h3>
-                                <button onClick={() => deleteTitle(index)}>Cancella</button>
+                            <div class="d-flex mt-3" key={index}>
+                                <h3 class="me-3">{title}</h3>
+                                <button
+                                className={mainStyles.trash} 
+                                onClick={() => deleteTitle(index)}><i class="fa-solid fa-trash"></i></button>
                             </div>
                         ))}
                     </div>

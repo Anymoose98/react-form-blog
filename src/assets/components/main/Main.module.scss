@@ -3,7 +3,32 @@
 }
 
 .button {
-    padding: 10px;
     background-color: rgb(138, 4, 255);
+    padding: 5px;
     color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid;
+    &:hover{
+        background-color: white;
+        color: rgb(138, 4, 255);
+        border: 1px solid;
+    }
+}
+
+.trash{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    &:hover{
+        background-color: white;
+        color: red;
+        border: 1px solid;
+    }
 }
