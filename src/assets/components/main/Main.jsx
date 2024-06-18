@@ -45,8 +45,8 @@ const Main = () => {
     return (
         <main>
             <div className="container">
-                <div className="row">
-                    <div className="col-12 my-5">
+                <div className="row justify-content-center">
+                    <div className="col-12 my-5 ">
                         <label htmlFor="title" className={mainStyles.viola}>
                             <h3>Titolo del post</h3>
                         </label>
@@ -61,10 +61,10 @@ const Main = () => {
                         <button className={mainStyles.button} onClick={titleSubmit}>Invia</button>
                     </div>
 
-                    <div className="col-12">
-                        <h3 className={mainStyles.viola}>Titoli salvati</h3>
-                        {titles.map((title, index) => (
-                            <div className="d-flex mt-3" key={index}>
+                    <h3 className={mainStyles.viola}>Titoli salvati</h3>
+                    {titles.map((title, index) => (
+                        <div className="col-12 col-md-4  d-flex justify-content-center">
+                            <div className="d-flex mt-3 text-center" key={index}>
                                 {editIndex === index ? (
                                     <div>
                                         <input
@@ -95,8 +95,8 @@ const Main = () => {
                                     </div>
                                 )}
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </main>
