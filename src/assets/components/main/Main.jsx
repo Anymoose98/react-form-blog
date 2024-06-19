@@ -11,7 +11,8 @@ const Main = () => {
     const titleSubmit = (event) => {
         event.preventDefault();
         const title = titleRef.current.value;
-        if (title) {
+        // Se inserisci 3 spazi non si crea il post 
+        if (title.trim().length !== 0) {
             setTitles(array => ([...array, title]));
             titleRef.current.value = "";
         }
