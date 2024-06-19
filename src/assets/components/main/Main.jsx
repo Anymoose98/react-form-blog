@@ -82,7 +82,7 @@ const Main = () => {
                                     </div>
                                 ) : (
                                     <div>
-                                        <h3 className="me-3">{title}</h3>
+                                        <h3>{title}</h3>
                                         <button
                                             className={mainStyles.edit}
                                             onClick={() => startEditTitle(index, title)}>
